@@ -17,11 +17,31 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
         <style>
+            /*Sticky footer*/
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+            }
+            .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                /* Set the fixed height of the footer here */
+                height: 60px;
+                background-color: #f5f5f5;
+            }
+
             body {
                 padding-top: 50px;
             }
 
-            .navbar-brand > img {
+            .navbar-brand > img,
+            .footer img,
+            .footer p {
                 height: 20px;
                 display: inline-block;
             }
@@ -237,5 +257,19 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <br>
+                    <div class="col-xs-6">
+                        <p class="text-muted">TIBBOT by Axces</p>
+                        <img src="img/brand.png">
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="text-muted">Copyright © Axces 2015 tous droits réservés</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
